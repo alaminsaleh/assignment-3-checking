@@ -1,355 +1,57 @@
-<!-- Challenge Part -->
-<section class="bg-[#FFFFFF] border border-5 border-red-600">
-    <!-- Text -->
-    <div class="border border-5 border-blue-600 space-y-6 flex flex-col items-center justify-center">
-        <button
-            class="btn bg-[#ABEF5F33] text-black hover:bg-gray-200 rounded-full font-bold shadow-md md:px-6 md:py-2 flex items-center px-3 py-1 md:mx-0 self-center">
-            <i class="fa-solid fa-arrow-right h-4 w-4 flex items-center justify-center mr-1"></i> Explore our Latest
-            works
-        </button>
-        <!-- Heading -->
-        <h1 class="md:text-4xl lg:text-4xl text-2xl text-center font-bold leading-tight">Our Latest Portfolio</h1>
-        <!-- Description -->
-        <p class="font-medium	text-lg text-center">The barn house captivates with its blend of rustic charm and
-            modern
-            sophistication, <span class="hidden lg:inline"><br></span> featuring weathered wood, sleek metal accents.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-50 relative">
+
+    <!-- Background Image with Tailwind -->
+    <div class="absolute inset-0 bg-[url('./assets/bg.jpg')] bg-cover bg-center opacity-1"></div>
+
+    <!-- Overlay (optional) -->
+    <div class="absolute inset-0 bg-white bg-opacity-60"></div>
+
+    <!-- Form Section -->
+    <section class="relative z-10 w-full max-w-3xl p-8 bg-white/90 rounded-lg shadow-md backdrop-blur-md">
+        <div class="text-center mb-6">
+            <a href="#" class="inline-flex items-center px-4 py-2 bg-lime-300 hover:bg-lime-400 text-black font-semibold rounded-full">
+                Let's Connect
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="ml-2 h-5 w-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+        </div>
+
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-4">Let's Discuss Next Project</h2>
+        <p class="text-gray-500 text-center mb-8">
+            The barn house captivates with its blend of rustic charm and modern sophistication, 
+            featuring weathered wood, sleek metal accents.
         </p>
-    </div>
-    <!-- Cards -->
-    <div class="md:container mx-auto gap-4 grid grid-cols-1 md:grid-cols-4 pt-8 border border-5 border-green-600">
-        <!-- Card-1 -->
-        <div class=" flex gap-6 grid-cols-1 md:col-span-3 border border-gray-300 rounded-xl p-6">
-            <!-- Image -->
-            <img src="./assets/img1.png" alt="">
-            <!-- Text -->
-            <div class="space-y-4 flex items-stretch justify-center flex-col">
-                <h4 class="font-extrabold text-2xl">Commercial</h4>
-                <p class="text-gray-700 font-medium	text-lg">The barn house captivates with its blend of rustic charm
-                    and modern. The barn house captivates with its blend of rustic charm and modern .
-                </p>
-                <p class="text-xl font-extrabold">View Details <span class="pl-2"><i
-                            class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45"></i></span>
-                </p>
+
+        <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input type="text" placeholder="First Name*" class="input input-bordered w-full" />
+                <input type="text" placeholder="Last Name*" class="input input-bordered w-full" />
+                <input type="tel" placeholder="Phone Number*" class="input input-bordered w-full" />
+                <input type="email" placeholder="Email*" class="input input-bordered w-full" />
             </div>
-        </div>
-        <!-- Card-2 -->
-        <div class="border border-gray-300 rounded-xl p-6">
-            <img class="w-[326px] h-[179.3px]" src="./assets/img2.png" alt="">
-        </div>
+            
+            <textarea class="textarea textarea-bordered w-full mt-6" placeholder="Write your message here"></textarea>
 
-        <!-- Card-3 -->
-        <div class="border border-gray-300 rounded-xl p-5 flex items-center justify-center">
-            <img class="w-[226px] h-[179.3px]" src="./assets/img3.png" alt="">
-        </div>
-        <!-- Card-4 -->
-        <div class="flex gap-5 col-span-2 border border-gray-300 rounded-xl p-6">
-            <!-- Image -->
-            <img src="./assets/img4.png" alt="">
-            <!-- Text -->
-            <div class="space-y-4 pt-2">
-                <h4 class="font-extrabold text-2xl">Commercial</h4>
-                <p class="text-gray-700 font-medium	text-lg">The barn house captivates The barn house captivates </p>
-                <p class="text-xl font-extrabold">View Details <span class="pl-2"><i
-                            class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45"></i></span>
-                </p>
+            <div class="text-center mt-6">
+                <button class="btn btn-wide bg-lime-400 hover:bg-lime-500 text-white font-semibold">
+                    Send Mail
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="ml-2 h-5 w-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </button>
             </div>
-        </div>
-        <!-- Card-5 -->
-        <div class="border border-gray-300 rounded-xl p-5 flex items-center justify-center">
-            <img class="w-[226px] h-[179.3px] " src="./assets/img5.png" alt="">
-        </div>
-        <!-- Card-6 -->
-        <div></div>
-    </div>
+        </form>
+    </section>
 
-</section>
-
-<!-- ===================================------------------------========================================= -->
-<!-- Challenge Part -->
-<section class="bg-[#FFFFFF] border border-5 border-red-600">
-    <!-- Text -->
-    <div class="border border-5 border-blue-600 space-y-6 flex flex-col items-center justify-center">
-        <button
-            class="btn bg-[#ABEF5F33] text-black hover:bg-gray-200 rounded-full font-bold shadow-md md:px-6 md:py-2 flex items-center px-3 py-1 md:mx-0 self-center">
-            <i class="fa-solid fa-arrow-right h-4 w-4 flex items-center justify-center mr-1"></i> Explore our Latest
-            works
-        </button>
-        <!-- Heading -->
-        <h1 class="md:text-4xl lg:text-4xl text-2xl text-center font-bold leading-tight">Our Latest Portfolio</h1>
-        <!-- Description -->
-        <p class="font-medium text-lg text-center">The barn house captivates with its blend of rustic charm and modern
-            sophistication, <span class="hidden lg:inline"><br></span> featuring weathered wood, sleek metal accents.
-        </p>
-    </div>
-
-    <!-- Cards -->
-    <div
-        class="md:container mx-auto gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 pt-8 border border-5 border-green-600">
-        <!-- Card-1 -->
-        <div
-            class="flex md:flex-row flex-col gap-6 col-span-1 sm:col-span-2 md:col-span-3 border border-gray-300 rounded-xl p-6">
-            <!-- Image -->
-            <img src="./assets/img1.png" alt="" class="w-full h-auto">
-            <!-- Text -->
-            <div class="space-y-4 flex items-stretch justify-center flex-col">
-                <h4 class="font-extrabold text-2xl">Commercial</h4>
-                <p class="text-gray-700 font-medium text-lg">The barn house captivates with its blend of rustic charm
-                    and modern. The barn house captivates with its blend of rustic charm and modern.
-                </p>
-                <p class="text-xl font-extrabold">View Details <span class="pl-2"><i
-                            class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45"></i></span>
-                </p>
-            </div>
-        </div>
-        <!-- Card-2 -->
-        <div class="border border-gray-300 rounded-xl p-6">
-            <img class="w-full h-auto" src="./assets/img2.png" alt="">
-        </div>
-
-        <!-- Card-3 -->
-        <div class="border border-gray-300 rounded-xl p-5 flex items-center justify-center">
-            <img class="w-full h-auto" src="./assets/img3.png" alt="">
-        </div>
-        <!-- Card-4 -->
-        <div class="flex gap-5 col-span-1 sm:col-span-2 md:col-span-2 border border-gray-300 rounded-xl p-6">
-            <!-- Image -->
-            <img src="./assets/img4.png" alt="" class="w-full h-auto">
-            <!-- Text -->
-            <div class="space-y-4 pt-2">
-                <h4 class="font-extrabold text-2xl">Commercial</h4>
-                <p class="text-gray-700 font-medium text-lg">The barn house captivates The barn house captivates </p>
-                <p class="text-xl font-extrabold">View Details <span class="pl-2"><i
-                            class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45"></i></span>
-                </p>
-            </div>
-        </div>
-        <!-- Card-5 -->
-        <div class="border border-gray-300 rounded-xl p-5 flex items-center justify-center">
-            <img class="w-full h-auto" src="./assets/img5.png" alt="">
-        </div>
-        <!-- Card-6 -->
-        <div></div>
-    </div>
-</section>
-
-
-
-
-
-<!-- =======================---------------CHECK------------====================== problem in card-2 -->
-<!-- Challenge Part -->
-<section class="bg-[#FFFFFF] border border-5 border-red-600">
-    <!-- Text -->
-    <div class="border border-5 border-blue-600 space-y-6 flex flex-col items-center justify-center">
-        <button
-            class="btn bg-[#ABEF5F33] text-black hover:bg-gray-200 rounded-full font-bold shadow-md md:px-6 md:py-2 flex items-center px-3 py-1 md:mx-0 self-center">
-            <i class="fa-solid fa-arrow-right h-4 w-4 flex items-center justify-center mr-1"></i> Explore our Latest
-            works
-        </button>
-        <!-- Heading -->
-        <h1 class="md:text-4xl lg:text-4xl text-2xl text-center font-bold leading-tight">Our Latest Portfolio</h1>
-        <!-- Description -->
-        <p class="font-medium text-lg text-center">The barn house captivates with its blend of rustic charm and modern
-            sophistication, <span class="hidden lg:inline"><br></span> featuring weathered wood, sleek metal accents.
-        </p>
-    </div>
-
-    <!-- Cards -->
-    <div
-        class="md:container mx-auto gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 pt-8 border border-5 border-green-600">
-        <!-- Card-1 -->
-        <div
-            class="flex md:flex-row flex-col gap-6 col-span-1 sm:col-span-2 md:col-span-3 border border-gray-300 rounded-xl p-6">
-            <!-- Image -->
-            <img src="./assets/img1.png" alt="" class="w-full h-auto">
-            <!-- Text -->
-            <div class="space-y-4 flex items-stretch justify-center flex-col">
-                <h4 class="font-extrabold text-2xl">Commercial</h4>
-                <p class="text-gray-700 font-medium text-lg">The barn house captivates with its blend of rustic charm
-                    and
-                    modern. The barn house captivates with its blend of rustic charm and modern.
-                </p>
-                <p class="text-xl font-extrabold">View Details <span class="pl-2"><i
-                            class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45"></i></span>
-                </p>
-            </div>
-        </div>
-        <!-- Card-2 -->
-        <div class="border border-gray-300 rounded-xl p-6">
-            <img class="w-full h-auto" src="./assets/img2.png" alt="">
-        </div>
-
-        <!-- Card-3 -->
-        <div class="border border-gray-300 rounded-xl p-5 flex items-center justify-center">
-            <img class="w-full h-auto" src="./assets/img3.png" alt="">
-        </div>
-        <!-- Card-4 -->
-        <div class="flex gap-5 col-span-1 sm:col-span-2 md:col-span-2 border border-gray-300 rounded-xl p-6">
-            <!-- Image -->
-            <img src="./assets/img4.png" alt="" class="w-full h-auto">
-            <!-- Text -->
-            <div class="space-y-4 pt-2">
-                <h4 class="font-extrabold text-2xl">Commercial</h4>
-                <p class="text-gray-700 font-medium text-lg">The barn house captivates The barn house captivates </p>
-                <p class="text-xl font-extrabold">View Details <span class="pl-2"><i
-                            class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45"></i></span>
-                </p>
-            </div>
-        </div>
-        <!-- Card-5 -->
-        <div class="border border-gray-300 rounded-xl p-5 flex items-center justify-center">
-            <img class="w-full h-auto" src="./assets/img5.png" alt="">
-        </div>
-        <!-- Card-6 -->
-        <div></div>
-    </div>
-</section>
-
-
-
-<!-- CORRECT -->
- 
-    <!-- Challenge Part -->
-    <section class="bg-[#F4F4F4] md:bg-[#FFFFFF] border border-5 border-red-600 px-6 md:px-0">
-        <!-- Text -->
-        <div class="border border-5 border-blue-600 space-y-6 flex flex-col items-center justify-center">
-          <button
-            class="btn bg-[#ABEF5F33] text-black hover:bg-gray-200 rounded-full font-bold shadow-md md:px-6 md:py-2 flex items-center px-3 py-1 md:mx-0 self-center">
-            <i class="fa-solid fa-arrow-right h-4 w-4 flex items-center justify-center mr-1"></i> Explore our Latest works
-          </button>
-          <!-- Heading -->
-          <h1 class="md:text-4xl lg:text-4xl text-2xl text-center font-bold leading-tight">Our Latest Portfolio</h1>
-          <!-- Description -->
-          <p class="font-medium text-lg text-center">The barn house captivates with its blend of rustic charm and modern
-            sophistication, <span class="hidden lg:inline"><br></span> featuring weathered wood, sleek metal accents.
-          </p>
-        </div>
-        <!-- Cards -->
-        <div class="md:container mx-auto gap-4 grid grid-cols-1 md:grid-cols-4 pt-8 border border-5 border-green-600">
-          <!-- Card-1 -->
-          <div
-            class="bg-[#FFFFFF] flex flex-col md:flex-row col-span-2 gap-6 grid-cols-1 md:col-span-3 border border-gray-300 rounded-xl p-6">
-            <!-- Image -->
-            <img class="md:h-[179.3px]" src="./assets/img1.png" alt="">
-            <!-- Text -->
-            <div class="space-y-4 flex items-stretch justify-center flex-col">
-              <h4 class="font-extrabold text-2xl">Commercial</h4>
-              <p class="text-gray-700 font-medium	text-lg">The barn house captivates with its blend of rustic charm and
-                modern. The barn house captivates with its blend of rustic charm and modern .
-              </p>
-              <p class="text-xl font-extrabold">View Details <span class="pl-2"><i
-                    class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45"></i></span>
-              </p>
-            </div>
-          </div>
-          <!-- Card-2 -->
-          <div
-            class="bg-[#FFFFFF] flex flex-col md:flex-row col-span-1 md:col-span-1 border border-gray-300 rounded-xl p-6">
-            <img class="md:w-[326px] md:h-[179.3px]" src="./assets/img2.png" alt="">
-          </div>
-  
-          <!-- Card-3 (now reversed) -->
-          <div
-            class="bg-[#FFFFFF] gap-5 flex flex-col md:flex-row col-span-2 md:col-span-1 border border-gray-300 rounded-xl p-6 md:items-center md:justify-center ">
-            <img class="md:w-[226px] md:h-[179.3px]" src="./assets/img3.png" alt="">
-          </div>
-          <!-- Card-4 (now reversed) -->
-          <div
-            class="bg-[#FFFFFF] gap-5 flex flex-col md:flex-row col-span-2 border border-gray-300 rounded-xl p-6 ">
-            <!-- Image -->
-            <img class="md:h-[179.3px]" src="./assets/img4.png" alt="">
-            <!-- Text -->
-            <div class="space-y-4 pt-2">
-              <h4 class="font-extrabold text-2xl">Commercial</h4>
-              <p class="text-gray-700 font-medium text-lg">The barn house captivates The barn house captivates </p>
-              <p class="text-xl font-extrabold">View Details <span class="pl-2"><i
-                    class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45"></i></span>
-              </p>
-            </div>
-          </div>
-          <!-- Card-5 (now reversed) -->
-          <div
-            class="bg-[#FFFFFF] gap-5 flex flex-col md:flex-row col-span-2 md:col-span-1 border border-gray-300 rounded-xl p-6 md:items-center md:justify-center ">
-            <img class="md:w-[226px] md:h-[179.3px] " src="./assets/img5.png" alt="">
-          </div>
-          <!-- Card-6 (now reversed) -->
-          <div
-            class="bg-[#FFFFFF] gap-5 flex flex-col md:flex-row col-span-2 md:col-span-1 border border-gray-300 rounded-xl p-6 md:hidden">
-            <img src="./assets/img5.png" alt="">
-          </div>
-        </div>
-      </section>
-
-
-    <!-- MORE CORRECT -->
-
-      <!-- Challenge Part -->
-      <section class="bg-[#F4F4F4] md:bg-[#FFFFFF] border border-5 border-red-600 px-6 md:px-0">
-        <!-- Text -->
-        <div class="border border-5 border-blue-600 space-y-6 flex flex-col items-center justify-center">
-          <button
-            class="btn bg-[#ABEF5F33] text-black hover:bg-gray-200 rounded-full font-bold shadow-md md:px-6 md:py-2 flex items-center px-3 py-1 md:mx-0 self-center">
-            <i class="fa-solid fa-arrow-right h-4 w-4 flex items-center justify-center mr-1"></i> Explore our Latest works
-          </button>
-          <!-- Heading -->
-          <h1 class="md:text-4xl lg:text-4xl text-2xl text-center font-bold leading-tight">Our Latest Portfolio</h1>
-          <!-- Description -->
-          <p class="font-medium text-lg text-center">The barn house captivates with its blend of rustic charm and modern
-            sophistication, <span class="hidden lg:inline"><br></span> featuring weathered wood, sleek metal accents.
-          </p>
-        </div>
-        <!-- Cards -->
-        <div class="md:container mx-auto gap-4 grid grid-cols-1 md:grid-cols-4 pt-8 border border-5 border-green-600">
-          <!-- Card-1 -->
-          <div
-            class="bg-[#FFFFFF] flex flex-col md:flex-row col-span-2 gap-6 grid-cols-1 md:col-span-3 border border-gray-300 rounded-xl p-6">
-            <!-- Image -->
-            <img class="md:h-[179.3px] " src="./assets/img1.png" alt="">
-            <!-- Text -->
-            <div class="space-y-4 flex items-stretch justify-center flex-col">
-              <h4 class="font-extrabold text-2xl">Commercial</h4>
-              <p class="text-gray-700 font-medium	text-lg">The barn house captivates with its blend of rustic charm and
-                modern. The barn house captivates with its blend of rustic charm and modern .
-              </p>
-              <p class="text-xl font-extrabold">View Details <span class="pl-2"><i
-                    class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45"></i></span>
-              </p>
-            </div>
-          </div>
-          <!-- Card-2 -->
-          <div
-            class="bg-[#FFFFFF] gap-5 flex flex-col md:flex-row col-span-2 md:col-span-1 border border-gray-300 rounded-xl p-6">
-            <img class="md:h-[179.3px] " src="./assets/img2.png" alt="">
-          </div>
-  
-          <!-- Card-3 (now reversed) -->
-          <div
-            class="bg-[#FFFFFF] gap-5 flex flex-col md:flex-row col-span-2 md:col-span-1 border border-gray-300 rounded-xl p-6 md:items-center md:justify-center order-5 md:order-3">
-            <img class="md:w-[226px] md:h-[179.3px]" src="./assets/img3.png" alt="">
-          </div>
-          <!-- Card-4 (now reversed) -->
-          <div
-            class="bg-[#FFFFFF] gap-5 flex flex-col md:flex-row col-span-2 border border-gray-300 rounded-xl p-6 md:pt-7 order-3 sm:order-4">
-            <!-- Image -->
-            <img class="md:h-[179.3px]" src="./assets/img4.png" alt="">
-            <!-- Text -->
-            <div class="space-y-4 pt-2">
-              <h4 class="font-extrabold text-2xl">Commercial</h4>
-              <p class="text-gray-700 font-medium text-lg">The barn house captivates The barn house captivates </p>
-              <p class="text-xl font-extrabold">View Details <span class="pl-2"><i
-                    class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45"></i></span>
-              </p>
-            </div>
-          </div>
-          <!-- Card-5 (now reversed) -->
-          <div
-            class="bg-[#FFFFFF] gap-5 flex flex-col md:flex-row col-span-2 md:col-span-1 border border-gray-300 rounded-xl p-6 md:items-center md:justify-center order-3 md:order-5">
-            <img class="md:w-[226px] md:h-[179.3px]" src="./assets/img5.png" alt="">
-          </div>
-          <!-- Card-6 (now reversed) -->
-          <div
-            class="bg-[#FFFFFF] gap-5 flex flex-col md:flex-row col-span-2 md:col-span-1 border border-gray-300 rounded-xl p-6 order-last md:hidden">
-            <img src="./assets/img5.png" alt="">
-          </div>
-        </div>
-      </section>
+</body>
+</html>
